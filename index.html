@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">    
+    <link rel="stylesheet" href="./style.css">
+    <title>Google Sheets</title>
+</head>
+<body>
+    <!-- Containers for Static UI Structuring of Excel Clone -->
+    <div class="page-container">
+        <div class="page-action">Home</div>
+        <div class="page-action selected-page">File</div>
+        <div class="page-action">Insert</div>
+        <div class="page-action">Layout</div>
+        <div class="page-action">Help</div>
+    </div>
+    <div class="cell-container">
+        <span class="material-icons copy">
+            content_copy
+        </span>
+
+        <span class="material-icons cut">
+            content_cut
+        </span>
+
+        <span class="material-icons paste">
+            content_paste
+        </span>
+        
+        <select class="font-family-prop">
+            <option value="monospace">Monospace</option>
+            <option value="sans-serif">Sans-Serif</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="cursive">Cursive</option>
+        </select>
+        
+        <select class="font-size-prop">
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+        </select>
+
+        <span class="material-icons bold">
+            format_bold
+        </span>
+
+        <span class="material-icons italic">
+            format_italic
+        </span>
+
+        <span class="material-icons underlined">
+            format_underlined
+        </span>
+
+        <span class="material-icons align left">
+            format_align_left
+        </span>
+
+        <span class="material-icons align center">
+            format_align_center
+        </span>
+
+        <span class="material-icons align right">
+            format_align_right
+        </span>
+
+        <div class="color-container"> 
+            <span class="material-icons">
+                format_color_text
+            </span>
+            <input type="color" class="font-color">
+        </div>
+
+        <div class="color-container"> 
+            <span class="material-icons">
+                format_color_fill
+            </span>
+            <input type="color" class="fill-color">
+        </div>
+       
+        <span class="material-icons download">
+            file_download
+        </span>
+
+        <span class="material-icons upload">
+            file_upload
+        </span>
+
+    </div>
+    
+    <div class="formula-container">
+        <input type="text" readonly class="address-bar">
+        <span class="material-icons formula-icon">
+            functions
+        </span>
+        <input type="text" class="formula-bar">
+    </div>
+    
+    <div class="grid-container">
+        <div class="dummy-cell"></div>
+        <div class="address-column-container"></div>
+        <div class="cells">
+            <div class="address-row-container"></div>
+        </div>
+    </div>
+   
+    <div class="sheet">
+        <div class="sheet-add-icon">
+            <span class="material-icons">
+                post_add
+            </span>
+        </div>
+        <div class="sheets-folder-container">
+            
+        </div>
+    </div>
+
+    <script src="grid-display.js"></script>
+    <script src="cyclic-graph.js"></script>
+    <script src="sheet-handler.js"></script>
+    <script src="cell-properties.js"></script>
+    <script src="cyclic-path-trace.js"></script>
+    <script src="functions.js"></script>
+    <script src="cut-copy-paste.js"></script>
+    <script src="upload-download.js"></script>
+    
+</body>
+</html>
